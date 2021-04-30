@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 23/04/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndFortune.xaml.cs
 
 Description:  Is the Fortune Window logic for the Fortune Game
 Properties: db, session, imgs, prediction, count, score
