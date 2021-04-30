@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB138844-473A-4F55-81E2-F0766F733311}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectGameInterface</RootNamespace>
+    <AssemblyName>ProjectGameInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Classes\Card.cs" />
+    <Compile Include="Classes\Deck.cs" />
+    <Compile Include="Classes\Game.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Game.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="wndAddPlayer.xaml.cs">
+      <DependentUpon>wndAddPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndFortune.xaml.cs">
+      <DependentUpon>wndFortune.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndGoFish.xaml.cs">
+      <DependentUpon>wndGoFish.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndMatch.xaml.cs">
+      <DependentUpon>wndMatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndScoreBoard.xaml.cs">
+      <DependentUpon>wndScoreBoard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="wndAddPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndFortune.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndGoFish.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndMatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndScoreBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mdb.png" />
+    <Resource Include="Images\pdb.png" />
+    <Resource Include="Images\tdb.png" />
+    <Resource Include="Images\PlayingCards\10c.png" />
+    <Resource Include="Images\PlayingCards\10d.png" />
+    <Resource Include="Images\PlayingCards\10h.png" />
+    <Resource Include="Images\PlayingCards\10s.png" />
+    <Resource Include="Images\PlayingCards\2c.png" />
+    <Resource Include="Images\PlayingCards\2d.png" />
+    <Resource Include="Images\PlayingCards\2h.png" />
+    <Resource Include="Images\PlayingCards\2s.png" />
+    <Resource Include="Images\PlayingCards\3c.png" />
+    <Resource Include="Images\PlayingCards\3d.png" />
+    <Resource Include="Images\PlayingCards\3h.png" />
+    <Resource Include="Images\PlayingCards\3s.png" />
+    <Resource Include="Images\PlayingCards\4c.png" />
+    <Resource Include="Images\PlayingCards\4d.png" />
+    <Resource Include="Images\PlayingCards\4h.png" />
+    <Resource Include="Images\PlayingCards\4s.png" />
+    <Resource Include="Images\PlayingCards\5c.png" />
+    <Resource Include="Images\PlayingCards\5d.png" />
+    <Resource Include="Images\PlayingCards\5h.png" />
+    <Resource Include="Images\PlayingCards\5s.png" />
+    <Resource Include="Images\PlayingCards\6c.png" />
+    <Resource Include="Images\PlayingCards\6d.png" />
+    <Resource Include="Images\PlayingCards\6h.png" />
+    <Resource Include="Images\PlayingCards\6s.png" />
+    <Resource Include="Images\PlayingCards\7c.png" />
+    <Resource Include="Images\PlayingCards\7d.png" />
+    <Resource Include="Images\PlayingCards\7h.png" />
+    <Resource Include="Images\PlayingCards\7s.png" />
+    <Resource Include="Images\PlayingCards\8c.png" />
+    <Resource Include="Images\PlayingCards\8d.png" />
+    <Resource Include="Images\PlayingCards\8h.png" />
+    <Resource Include="Images\PlayingCards\8s.png" />
+    <Resource Include="Images\PlayingCards\9c.png" />
+    <Resource Include="Images\PlayingCards\9d.png" />
+    <Resource Include="Images\PlayingCards\9h.png" />
+    <Resource Include="Images\PlayingCards\9s.png" />
+    <Resource Include="Images\PlayingCards\Acec.png" />
+    <Resource Include="Images\PlayingCards\Aced.png" />
+    <Resource Include="Images\PlayingCards\Aceh.png" />
+    <Resource Include="Images\PlayingCards\Aces.png" />
+    <Resource Include="Images\PlayingCards\Jackc.png" />
+    <Resource Include="Images\PlayingCards\Jackd.png" />
+    <Resource Include="Images\PlayingCards\Jackh.png" />
+    <Resource Include="Images\PlayingCards\Jacks.png" />
+    <Resource Include="Images\PlayingCards\Kingc.png" />
+    <Resource Include="Images\PlayingCards\Kingd.png" />
+    <Resource Include="Images\PlayingCards\Kingh.png" />
+    <Resource Include="Images\PlayingCards\Kings.png" />
+    <Resource Include="Images\PlayingCards\Queenc.png" />
+    <Resource Include="Images\PlayingCards\Queend.png" />
+    <Resource Include="Images\PlayingCards\Queenh.png" />
+    <Resource Include="Images\PlayingCards\Queens.png" />
+    <Resource Include="Images\MatchCards\cheese.png" />
+    <Resource Include="Images\MatchCards\cirlce.png" />
+    <Resource Include="Images\MatchCards\glass.png" />
+    <Resource Include="Images\MatchCards\hat.png" />
+    <Resource Include="Images\MatchCards\leaf.png" />
+    <Resource Include="Images\MatchCards\music.png" />
+    <Resource Include="Images\MatchCards\pentagon.png" />
+    <Resource Include="Images\MatchCards\rabbit.png" />
+    <Resource Include="Images\MatchCards\spoon.png" />
+    <Resource Include="Images\MatchCards\star.png" />
+    <Resource Include="Images\MatchCards\triangle.png" />
+    <Resource Include="Images\MatchCards\tv.png" />
+    <Resource Include="Images\TarotCards\placeholder.png" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.edmx.sql" />
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
