@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 15/03/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/Classes/Player.cs
 
 Document Description: Defines a partial class Player
                       The properties Id and PlayerName are defined in the auto-generated Player class
