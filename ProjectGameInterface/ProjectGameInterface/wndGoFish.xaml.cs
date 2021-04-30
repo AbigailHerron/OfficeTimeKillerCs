@@ -7,7 +7,7 @@ GitHub Link:
 Description:  Is the GoFish Window logic for the GoFish Game
 Properties: db, session, imgs
 Constructors: Default, Player
-EventBased Methods: 
+EventBased Methods: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndGoFish.xaml.cs
 Logic Methods: 
 
 NOTES: Did not get around to making this work
