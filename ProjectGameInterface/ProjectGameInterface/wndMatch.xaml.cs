@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 24/04/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndMatch.xaml.cs
 
 Description:  Is the Match Window logic for the Match Game
 Properties: db, session, imgs, map, path
