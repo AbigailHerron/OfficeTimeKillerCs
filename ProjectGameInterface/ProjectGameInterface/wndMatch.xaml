@@ -1,0 +1,59 @@
+﻿<!--#####################################################################################################################################
+    Name: Abigail Herron
+    ID: S00200536
+    Year: 2
+    Date: 27/04/21
+    GitHub Link:
+    
+    Description: Contains the layout information for the Match window
+    Notable Items: Atempted to use a listbox to contain the card images as I was intending to use the
+                   'SelectionChange' support to flip the image source from the deckImage to the 
+                    cardImage path -> Didn't quite figure that out
+#####################################################################################################################################-->    
+<Window x:Class="ProjectGameInterface.wndMatch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectGameInterface"
+        mc:Ignorable="d"
+        Title="Match" Height="750" Width="1000" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid x:Name="gMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Defining gMain Column0 Elements -->
+        <!-- Got this from here: https://stackoverflow.com/questions/58859077/how-to-select-an-image-in-a-list-of-image-in-wrappannel-wpf -->
+        <ListBox x:Name="lbxMatchCards" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="lbxMatchCards_SelectionChanged">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!-- Setting the default image source to the back of the deck on load -->
+                    <Image Width="100" Height="150"  Margin="9" Source="Images/mdb.png" />
+
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- Defining gMain Column1 Elements -->
+        <Grid x:Name="gInfoPane" Grid.Column="1" Background="LightSteelBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="60*"/>
+            </Grid.RowDefinitions>
+            <!-- Defining gInfoPane Row0 Elements -->
+            <TextBlock x:Name="tblkLifeLable" Text="Lives Left : " HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,10" Width="100" Height="30" FontSize="18" />
+            <TextBlock x:Name="tblkLivesLeft" Text="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="110,0,0,10" Width="100" Height="30" FontSize="18" />
+
+            <!-- Defining gInfoPane Row1 Elements -->
+            <Button x:Name="btnReset" Content="Reset Game" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="25" Width="140" Height="35" FontSize="18" Grid.Row="1"/>
+            <Button x:Name="btnMenuRtn" Content="Return to Menu" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25" Width="140" Height="35" FontSize="18" Grid.Row="1" Click="btnMenuRtn_Click"/>
+            <Button x:Name="btnQuit" Content="Quit" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="25" Width="140" Height="35" FontSize="18" Grid.Row="1" Click="btnQuit_Click"/>
+        </Grid>
+    </Grid>
+</Window>
