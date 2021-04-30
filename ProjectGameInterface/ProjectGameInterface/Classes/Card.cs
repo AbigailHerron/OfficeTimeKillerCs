@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 12/03/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/Classes/Card.cs
 
 Description: Defines a Card-like object
 Properties: Rank, Suit, Image, Point, Position
