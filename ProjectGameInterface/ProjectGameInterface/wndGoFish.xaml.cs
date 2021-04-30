@@ -2,12 +2,12 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 25/04/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndGoFish.xaml.cs
 
 Description:  Is the GoFish Window logic for the GoFish Game
 Properties: db, session, imgs
 Constructors: Default, Player
-EventBased Methods: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndGoFish.xaml.cs
+EventBased Methods: btnMenuRtn_Click
 Logic Methods: 
 
 NOTES: Did not get around to making this work
@@ -57,9 +57,19 @@ namespace ProjectGameInterface
 
 
 
+
+
         /*EVENT BASED METHODS ---------------------------------------------------------------------------------------------*/
-
-
+        /*Method: btnMenuRtn_Click()
+                  1) Creates a new MainWindow object wnd
+                  2) Opens wnd
+                  3) Closes Fortune window */
+        private void btnMenuRtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow wnd = new MainWindow();
+            wnd.Show();
+            this.Close();
+        }// end btnMenuRtn_Click
 
         /*LOGIC BASED METHODS ---------------------------------------------------------------------------------------------*/
 
