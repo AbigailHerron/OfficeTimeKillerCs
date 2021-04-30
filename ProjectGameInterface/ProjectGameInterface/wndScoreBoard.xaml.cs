@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 23/04/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndScoreBoard.xaml.cs
 
 Description:  Is the ScoreBoard Window logic 
 Properties: db
