@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 13/03/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/Classes/Deck.cs
 
 Document Description: Defines a parent class Deck and all sub-classes
 
