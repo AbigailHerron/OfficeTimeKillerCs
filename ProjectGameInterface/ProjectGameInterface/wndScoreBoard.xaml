@@ -3,7 +3,7 @@
     ID: S00200536
     Year: 2
     Date: 27/04/21
-    GitHub Link:
+    GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndScoreBoard.xaml
     
     Description: Defines the layout of the ScoreBoard Window
     Notable Items: Using Tabs to keep track of different game scores
