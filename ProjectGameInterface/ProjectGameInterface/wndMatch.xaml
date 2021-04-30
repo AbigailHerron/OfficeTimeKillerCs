@@ -3,7 +3,7 @@
     ID: S00200536
     Year: 2
     Date: 27/04/21
-    GitHub Link:
+    GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndMatch.xaml
     
     Description: Contains the layout information for the Match window
     Notable Items: Atempted to use a listbox to contain the card images as I was intending to use the
