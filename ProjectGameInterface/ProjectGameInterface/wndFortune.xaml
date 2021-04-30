@@ -3,7 +3,7 @@
     ID: S00200536
     Year: 2
     Date: 27/04/21
-    GitHub Link:
+    GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/wndFortune.xaml
     
     Description: Contains the layout information for the Fortune window
     Notable Items: Using listbox to hold the cards drawn for the reading -> Didn't quite figure this out either
@@ -47,13 +47,13 @@
         <TextBlock x:Name="tblkLuckScore" Text="Placeholder" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Height="30" Width="120" Margin="5" FontSize="14"  Grid.Row="1" Grid.Column="2" />
 
         <!-- Defining Row2 Elements -->
-        <TextBlock x:Name="tblkPastCard" Text="Past" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="140" TextAlignment="Center" FontSize="16" Margin="20" Grid.Row="2" Grid.Column="1" />
-        <TextBlock x:Name="tblkPresentCard" Text="Present" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Height="40" Width="140" MinHeight="30" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
-        <TextBlock x:Name="tblkFutureCard" Text="Future" HorizontalAlignment="Right" VerticalAlignment="Top" TextAlignment="Center" Height="40" Width="140" MinHeight="30" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkPastCard" Text="Past" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="150" TextAlignment="Center" FontSize="16" Margin="20" Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkPresentCard" Text="Present" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Height="40" Width="150" MinHeight="30" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkFutureCard" Text="Future" HorizontalAlignment="Right" VerticalAlignment="Top" TextAlignment="Center" Height="40" Width="150" MinHeight="30" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
 
-        <TextBlock x:Name="tblkPastPrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="140" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
-        <TextBlock x:Name="tblkPresentPrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="140" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
-        <TextBlock x:Name="tblkFuturePrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Right" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="140" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkPastPrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Left" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="150" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkPresentPrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="150" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
+        <TextBlock x:Name="tblkFuturePrediction" TextWrapping="Wrap" Text="Placeholder" HorizontalAlignment="Right" VerticalAlignment="Center" TextAlignment="Center" MinHeight="40" Width="150" FontSize="16" Margin="20"  Grid.Row="2" Grid.Column="1" />
 
         <Button x:Name="btnGetRead" Content="Get A Reading" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="90" Grid.Row="2" Grid.Column="2" Click="btnGetRead_Click" />
         <Button x:Name="btnMainRtn" Content="Main Menu" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30" Width="90" Grid.Row="2" Grid.Column="2" Click="btnMainRtn_Click" />
