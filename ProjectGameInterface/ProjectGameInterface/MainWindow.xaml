@@ -3,7 +3,7 @@
     ID: S00200536
     Year: 2
     Date: 27/04/21
-    GitHub Link:
+    GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/MainWindow.xaml
     
     Description: Contains the layout information for the MainWindow, or Menu
     Notable Items: Two listboxes linked to two different database entities (or tables)
