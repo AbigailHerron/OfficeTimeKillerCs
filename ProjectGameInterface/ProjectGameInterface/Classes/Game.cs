@@ -2,7 +2,7 @@
 Name: Abigail Herron
 ID: S00200536
 Date: 17/03/21
-GitHub Link:
+GitHub Link: https://github.com/AbigailHerron/Project/blob/main/ProjectGameInterface/ProjectGameInterface/Classes/Game.cs
 
 Document Description: Defines a parent, partial class Game and all sub-classes
                       The properties Id and GameType are defined in the auto-generated Game class
